@@ -18,18 +18,23 @@ classifiers = [
 readme = "README.md"
 requires-python = ">=3.12.3"
 dependencies = [
+    "datetime>=6.0",
     "fastapi==0.115.6",
     "invoke>=2.2.0",
     "joblib>=1.5.3",
+    "loguru>=0.7.3",
     "matplotlib>=3.10.8",
     "numpy>=2.4.0",
+    "pytorch-lightning>=2.6.0",
     "scikit-learn>=1.8.0",
     "snakeviz>=2.2.2",
+    "tensorflow>=2.20.0",
     "torch==2.6.0",
     "torch-tb-profiler>=0.4.3",
     "torchvision>=0.21.0",
     "typer==0.16.0",
     "uvicorn==0.34.0",
+    "wandb>=0.23.1",
 ]
 
 [dependency-groups]

@@ -1,0 +1,5 @@
+2026-01-08T13:10:45.797067+0100 | DEBUG | Used for debugging your code.
+2026-01-08T13:10:45.797563+0100 | INFO | Informative messages from your code.
+2026-01-08T13:10:45.797821+0100 | WARNING | Everything works but there is something to be aware of.
+2026-01-08T13:10:45.798123+0100 | ERROR | There's been a mistake with the process.
+2026-01-08T13:10:45.798530+0100 | CRITICAL | There is something terribly wrong and process may terminate.
