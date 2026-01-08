@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+Git_Folder.egg-info/PKG-INFO
+Git_Folder.egg-info/SOURCES.txt
+Git_Folder.egg-info/dependency_links.txt
+Git_Folder.egg-info/entry_points.txt
+Git_Folder.egg-info/requires.txt
+Git_Folder.egg-info/top_level.txt
+MLOPS/bin/activate_this.py

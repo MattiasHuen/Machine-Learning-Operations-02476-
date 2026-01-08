@@ -25,6 +25,7 @@ dependencies = [
     "numpy>=2.4.0",
     "scikit-learn>=1.8.0",
     "torch==2.6.0",
+    "torchvision>=0.21.0",
     "typer==0.16.0",
     "uvicorn==0.34.0",
 ]
@@ -65,3 +66,7 @@ omit = ["tests/*"]
 [project.scripts]
 train = "my_project.train:train"
 eval = "my_project.evaluate:evaluate"
+
+[tool.setuptools.packages.find]
+include = ["MLOPS*"]
+exclude = ["S_*"]
