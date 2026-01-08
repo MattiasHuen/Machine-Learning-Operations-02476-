@@ -14,7 +14,9 @@ Requires-Dist: joblib>=1.5.3
 Requires-Dist: matplotlib>=3.10.8
 Requires-Dist: numpy>=2.4.0
 Requires-Dist: scikit-learn>=1.8.0
+Requires-Dist: snakeviz>=2.2.2
 Requires-Dist: torch==2.6.0
+Requires-Dist: torch-tb-profiler>=0.4.3
 Requires-Dist: torchvision>=0.21.0
 Requires-Dist: typer==0.16.0
 Requires-Dist: uvicorn==0.34.0
