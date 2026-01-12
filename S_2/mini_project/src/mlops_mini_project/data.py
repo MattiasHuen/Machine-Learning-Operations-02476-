@@ -44,6 +44,12 @@ def corrupt_mnist() -> tuple[torch.utils.data.Dataset, torch.utils.data.Dataset]
     test_set = torch.utils.data.TensorDataset(test_images, test_target)
     return train_set, test_set
 
+def MyDataset(data_dir: str) -> torch.utils.data.Dataset:
+    """Custom dataset class for loading data."""
+    images = torch.load(f"{data_dir}/test_images.pt")
+    targets = torch.load(f"{data_dir}/test_target.pt")
+    return torch.utils.data.TensorDataset(images, targets)
+
 
 if __name__ == "__main__":
     typer.run(preprocess_data)
