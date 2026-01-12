@@ -1,8 +1,10 @@
 from torch.utils.data import Dataset
 from src.mlops_mini_project.data import MyDataset, corrupt_mnist
 from tests import _PATH_DATA
+import os.path
+import pytest
 
-
+@pytest.mark.skipif(not os.path.exists(_PATH_DATA), reason="Data files not found")
 
 def test_my_dataset():
     """Test the MyDataset class."""

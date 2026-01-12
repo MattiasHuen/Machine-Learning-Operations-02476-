@@ -3,6 +3,8 @@ import torch
 from torch import nn, optim
 from torch.utils.data import DataLoader
 from pytorch_lightning.callbacks import ModelCheckpoint, EarlyStopping
+
+from torch import Tensor
 # class Model(nn.Module):
 #     """My awesome model."""
 
@@ -25,6 +27,13 @@ from pytorch_lightning.callbacks import ModelCheckpoint, EarlyStopping
 #         x = torch.flatten(x, 1)
 #         x = self.dropout(x)
 #         return self.fc1(x)
+
+# src/models/model.py
+def forward(self, x: Tensor):
+    if x.ndim != 4:
+        raise ValueError('Expected input to a 4D tensor')
+    if x.shape[1] != 1 or x.shape[2] != 28 or x.shape[3] != 28:
+        raise ValueError('Expected each sample to have shape [1, 1, 28, 28]')
 
 def corrupt_mnist() -> tuple[torch.utils.data.Dataset, torch.utils.data.Dataset]:
     """Return train and test datasets for corrupt MNIST."""
